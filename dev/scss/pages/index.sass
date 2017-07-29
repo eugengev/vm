@@ -1,0 +1,203 @@
+body
+  background: #e6e7e8
+  font-family: 'PT Sans', sans-serif
+  font-size: 13px
+  line-height: normal
+
+.btn, a.btn
+  width: 205px
+  height: 47px
+  background: #ffffff
+  font-size: 18px
+  font-family: Tahoma
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  color: #ff3f4a
+  line-height: 47px
+  border-radius: 22px
+  font-weight: 600
+  text-align: center
+  letter-spacing: 0
+
+.mainslider
+  position: relative
+  &__item
+    position: relative
+    .container
+      position: absolute
+      left: 50%
+      top: 201px
+      transform: translate(-50%, 0)
+      color: #fff
+      font-size: 21.83px
+  &__title
+    font-size: 45.82px
+    line-height: 46px
+    font-weight: 600
+    padding-bottom: 15px
+  &__desc
+    font-size: 21.83px
+    line-height: 29px
+    padding-bottom: 35px
+  .slick-arrow
+    display: block
+    z-index: 101
+    margin-top: -73px
+    position: absolute
+    top: 50%
+    background: none
+    text-indent: -9999px
+    border: none
+    &.slick-prev
+      left: 50px
+      @include sprite($slide-prev)
+    &.slick-next
+      right: 56px
+      @include sprite($slide-next)
+  .slick-dots
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 73px
+    display: block
+    margin: 0
+    text-align: center
+    li
+      list-style: none
+      margin: 0
+      display: inline-block
+      padding: 0 10.5px
+      button
+        display: inline-block
+        height: 16px
+        width: 16px
+        text-indent: -99999px
+        border: none
+        background: #fff
+        border-radius: 50%
+        
+.main-text
+  padding: 37px 0 40px
+  background: #a73138
+  text-align: center
+  font-size: 15px
+  color: #ffffff
+  &__title
+    font-size: 36px
+    color: #ffffff
+    font-weight: 600
+    margin-bottom: 17px
+    line-height: 45px
+    letter-spacing: 2px
+  p
+    line-height: 19px
+    margin-bottom: 17px
+
+.main-info
+  background: #64bc46
+  padding: 14px 0 18px
+  font-size: 16px
+  font-weight: 600
+  color: #ffffff
+  &__pic
+    float: left
+  &__text
+    margin-left: 115px
+    font-size: 16px
+    font-weight: 600
+    padding-top: 15px
+    font-family: Tahoma
+
+h1
+  font-size: 46px
+  font-weight: 600
+  color: #ef3f4a
+  margin-bottom: 13px
+
+main
+  padding-top: 50px
+  
+.catalog-menu
+  display: block
+  margin-bottom: 12px
+  ul
+    display: block
+    margin: 0
+    padding: 0
+    &:after
+      content: ''
+      display: table
+      clear: both
+    li
+      display: block
+      list-style: none
+      float: left
+      padding: 0
+      margin: 0 7px 10px 0
+      a
+        line-height: 29px
+        font-family: Tahoma
+        font-size: 14.26px
+        color: #797979
+        display: inline-block
+        padding: 0 14px
+        background: #ffffff
+        border-radius: 12px
+        font-weight: 600
+
+
+.catalog-list
+  &__title
+    font-size: 36px
+    color: #303030
+    font-weight: 600
+    padding-left: 15px
+    padding-right: 15px
+    margin-bottom: 28px
+  .slick-list
+    max-width: 940px
+  &__slider
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 28px
+    &:after
+      content: ''
+      display: block
+      clear: both
+  &__item
+    max-width: 212px
+    background: #fff
+    padding: 22px
+    margin-left: 15px
+    margin-right: 15px
+    min-height: 364px
+    margin-bottom: 20px
+    &-pic
+      padding-bottom: 11px
+    &-title
+      font-size: 18px
+      color: #000000
+      font-weight: bold
+      text-decoration: none
+      margin-bottom: 8px
+      a
+        font-size: 18px
+        color: #000000
+        font-weight: bold
+        text-decoration: none
+    &-desc
+      font-size: 12px
+      color: #000000
+      table
+        td
+          width: 175px
+          padding-bottom: 7px
+        tr
+          td:nth-last-child(1)
+            font-weight: 600
+    &-price
+      font-size: 18px
+      color: #ef3f4a
+      font-weight: 600
+      font-family: Tahoma

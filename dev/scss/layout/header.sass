@@ -1,0 +1,94 @@
+.header
+  background: #343434
+  min-height: 64px
+  position: relative
+  z-index: 100
+  .container
+    position: relative
+  &__logo
+    position: absolute
+    left: -13px
+    top: 187%
+  &__phone
+    position: absolute
+    right: 13px
+    top: 183%
+    color: #ffffff
+    font-size: 16.83px
+    text-align: right
+    font-weight: 600
+    letter-spacing: -0.5px
+    a
+      display: block
+      color: #ffffff
+      font-size: 28.81px
+      text-decoration: none
+      font-weight: 600
+      line-height: 37px
+      letter-spacing: -1px
+  &__soc
+    text-align: right
+    margin-top: 7px
+    margin-right: -2px
+    a
+      display: inline-block
+      width: 24px
+      height: 22px
+      margin-left: 9px
+      &.vk
+        @include sprite($vk-main)
+      &.in
+        @include sprite($in-main)
+      &.fb
+        @include sprite($fb-main)
+  &__nav
+    display: block
+    padding-top: 16px
+    padding-left: 1px
+    line-height: 31px
+    li
+      list-style: none
+      float: left
+      display: block
+      padding-right: 32px
+      &:nth-last-child(1)
+        padding-right: 0
+      a
+        font-weight: 600
+        color: #c2c2c2
+        font-size: 13px
+        line-height: 31px
+        letter-spacing: 0.2px
+        &:hover
+          color: #ef3f4a
+      &.active
+        a
+          color: #ef3f4a
+  &__basket
+    margin-left: auto
+    margin-right: 0
+    display: block
+    width: 201px
+    height: 37px
+    border: #56af1b solid 2px
+    border-radius: 18px
+    padding-left: 40px
+    margin-top: 13px
+    color: #fff
+    line-height: 33px
+    position: relative
+    &:before
+      content: ''
+      display: inline-block
+      @include sprite($basket-top-icon)
+      position: absolute
+      left: 15px
+      top: 50%
+      margin-top: -7.5px
+    a
+      color: #ffffff
+      font-weight: bold
+    span
+      font-size: 15px
+      display: inline-block
+      padding-left: 11px

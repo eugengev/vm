@@ -1,0 +1,165 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$basket-top-icon-name: 'basket-top-icon'
+$basket-top-icon-x: 24px
+$basket-top-icon-y: 82px
+$basket-top-icon-offset-x: -24px
+$basket-top-icon-offset-y: -82px
+$basket-top-icon-width: 15px
+$basket-top-icon-height: 15px
+$basket-top-icon-total-width: 120px
+$basket-top-icon-total-height: 104px
+$basket-top-icon-image: 'sprite.png'
+$basket-top-icon: (24px, 82px, -24px, -82px, 15px, 15px, 120px, 104px, 'sprite.png', 'basket-top-icon', )
+$fb-inn-name: 'fb-inn'
+$fb-inn-x: 0px
+$fb-inn-y: 60px
+$fb-inn-offset-x: 0px
+$fb-inn-offset-y: -60px
+$fb-inn-width: 24px
+$fb-inn-height: 22px
+$fb-inn-total-width: 120px
+$fb-inn-total-height: 104px
+$fb-inn-image: 'sprite.png'
+$fb-inn: (0px, 60px, 0px, -60px, 24px, 22px, 120px, 104px, 'sprite.png', 'fb-inn', )
+$fb-main-name: 'fb-main'
+$fb-main-x: 24px
+$fb-main-y: 60px
+$fb-main-offset-x: -24px
+$fb-main-offset-y: -60px
+$fb-main-width: 24px
+$fb-main-height: 22px
+$fb-main-total-width: 120px
+$fb-main-total-height: 104px
+$fb-main-image: 'sprite.png'
+$fb-main: (24px, 60px, -24px, -60px, 24px, 22px, 120px, 104px, 'sprite.png', 'fb-main', )
+$in-inn-name: 'in-inn'
+$in-inn-x: 48px
+$in-inn-y: 60px
+$in-inn-offset-x: -48px
+$in-inn-offset-y: -60px
+$in-inn-width: 24px
+$in-inn-height: 22px
+$in-inn-total-width: 120px
+$in-inn-total-height: 104px
+$in-inn-image: 'sprite.png'
+$in-inn: (48px, 60px, -48px, -60px, 24px, 22px, 120px, 104px, 'sprite.png', 'in-inn', )
+$in-main-name: 'in-main'
+$in-main-x: 72px
+$in-main-y: 60px
+$in-main-offset-x: -72px
+$in-main-offset-y: -60px
+$in-main-width: 24px
+$in-main-height: 22px
+$in-main-total-width: 120px
+$in-main-total-height: 104px
+$in-main-image: 'sprite.png'
+$in-main: (72px, 60px, -72px, -60px, 24px, 22px, 120px, 104px, 'sprite.png', 'in-main', )
+$slide-next-name: 'slide-next'
+$slide-next-x: 0px
+$slide-next-y: 0px
+$slide-next-offset-x: 0px
+$slide-next-offset-y: 0px
+$slide-next-width: 60px
+$slide-next-height: 60px
+$slide-next-total-width: 120px
+$slide-next-total-height: 104px
+$slide-next-image: 'sprite.png'
+$slide-next: (0px, 0px, 0px, 0px, 60px, 60px, 120px, 104px, 'sprite.png', 'slide-next', )
+$slide-prev-name: 'slide-prev'
+$slide-prev-x: 60px
+$slide-prev-y: 0px
+$slide-prev-offset-x: -60px
+$slide-prev-offset-y: 0px
+$slide-prev-width: 60px
+$slide-prev-height: 60px
+$slide-prev-total-width: 120px
+$slide-prev-total-height: 104px
+$slide-prev-image: 'sprite.png'
+$slide-prev: (60px, 0px, -60px, 0px, 60px, 60px, 120px, 104px, 'sprite.png', 'slide-prev', )
+$vk-inn-name: 'vk-inn'
+$vk-inn-x: 96px
+$vk-inn-y: 60px
+$vk-inn-offset-x: -96px
+$vk-inn-offset-y: -60px
+$vk-inn-width: 24px
+$vk-inn-height: 22px
+$vk-inn-total-width: 120px
+$vk-inn-total-height: 104px
+$vk-inn-image: 'sprite.png'
+$vk-inn: (96px, 60px, -96px, -60px, 24px, 22px, 120px, 104px, 'sprite.png', 'vk-inn', )
+$vk-main-name: 'vk-main'
+$vk-main-x: 0px
+$vk-main-y: 82px
+$vk-main-offset-x: 0px
+$vk-main-offset-y: -82px
+$vk-main-width: 24px
+$vk-main-height: 22px
+$vk-main-total-width: 120px
+$vk-main-total-height: 104px
+$vk-main-image: 'sprite.png'
+$vk-main: (0px, 82px, 0px, -82px, 24px, 22px, 120px, 104px, 'sprite.png', 'vk-main', )
+$spritesheet-width: 120px
+$spritesheet-height: 104px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($basket-top-icon, $fb-inn, $fb-main, $in-inn, $in-main, $slide-next, $slide-prev, $vk-inn, $vk-main, )
+$spritesheet: (120px, 104px, 'sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../images/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

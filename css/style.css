@@ -1,0 +1,119 @@
+.header { background: #343434; min-height: 64px; position: relative; z-index: 100; }
+
+.header .container { position: relative; }
+
+.header__logo { position: absolute; left: -13px; top: 187%; }
+
+.header__phone { position: absolute; right: 13px; top: 183%; color: #ffffff; font-size: 16.83px; text-align: right; font-weight: 600; letter-spacing: -0.5px; }
+
+.header__phone a { display: block; color: #ffffff; font-size: 28.81px; text-decoration: none; font-weight: 600; line-height: 37px; letter-spacing: -1px; }
+
+.header__soc { text-align: right; margin-top: 7px; margin-right: -2px; }
+
+.header__soc a { display: inline-block; width: 24px; height: 22px; margin-left: 9px; }
+
+.header__soc a.vk { background-image: url(../images/sprite.png); background-position: 0px -82px; width: 24px; height: 22px; }
+
+.header__soc a.in { background-image: url(../images/sprite.png); background-position: -72px -60px; width: 24px; height: 22px; }
+
+.header__soc a.fb { background-image: url(../images/sprite.png); background-position: -24px -60px; width: 24px; height: 22px; }
+
+.header__nav { display: block; padding-top: 16px; padding-left: 1px; line-height: 31px; }
+
+.header__nav li { list-style: none; float: left; display: block; padding-right: 32px; }
+
+.header__nav li:nth-last-child(1) { padding-right: 0; }
+
+.header__nav li a { font-weight: 600; color: #c2c2c2; font-size: 13px; line-height: 31px; letter-spacing: 0.2px; }
+
+.header__nav li a:hover { color: #ef3f4a; }
+
+.header__nav li.active a { color: #ef3f4a; }
+
+.header__basket { margin-left: auto; margin-right: 0; display: block; width: 201px; height: 37px; border: #56af1b solid 2px; border-radius: 18px; padding-left: 40px; margin-top: 13px; color: #fff; line-height: 33px; position: relative; }
+
+.header__basket:before { content: ''; display: inline-block; background-image: url(../images/sprite.png); background-position: -24px -82px; width: 15px; height: 15px; position: absolute; left: 15px; top: 50%; margin-top: -7.5px; }
+
+.header__basket a { color: #ffffff; font-weight: bold; }
+
+.header__basket span { font-size: 15px; display: inline-block; padding-left: 11px; }
+
+.footer { background: #ef3f4a; min-height: 286px; }
+
+body { background: #e6e7e8; font-family: 'PT Sans', sans-serif; font-size: 13px; line-height: normal; }
+
+.btn, a.btn { width: 205px; height: 47px; background: #ffffff; font-size: 18px; font-family: Tahoma; display: inline-block; text-decoration: none; text-transform: uppercase; color: #ff3f4a; line-height: 47px; border-radius: 22px; font-weight: 600; text-align: center; letter-spacing: 0; }
+
+.mainslider { position: relative; }
+
+.mainslider__item { position: relative; }
+
+.mainslider__item .container { position: absolute; left: 50%; top: 201px; -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); color: #fff; font-size: 21.83px; }
+
+.mainslider__title { font-size: 45.82px; line-height: 46px; font-weight: 600; padding-bottom: 15px; }
+
+.mainslider__desc { font-size: 21.83px; line-height: 29px; padding-bottom: 35px; }
+
+.mainslider .slick-arrow { display: block; z-index: 101; margin-top: -73px; position: absolute; top: 50%; background: none; text-indent: -9999px; border: none; }
+
+.mainslider .slick-arrow.slick-prev { left: 50px; background-image: url(../images/sprite.png); background-position: -60px 0px; width: 60px; height: 60px; }
+
+.mainslider .slick-arrow.slick-next { right: 56px; background-image: url(../images/sprite.png); background-position: 0px 0px; width: 60px; height: 60px; }
+
+.mainslider .slick-dots { position: absolute; left: 0; right: 0; bottom: 73px; display: block; margin: 0; text-align: center; }
+
+.mainslider .slick-dots li { list-style: none; margin: 0; display: inline-block; padding: 0 10.5px; }
+
+.mainslider .slick-dots li button { display: inline-block; height: 16px; width: 16px; text-indent: -99999px; border: none; background: #fff; border-radius: 50%; }
+
+.main-text { padding: 37px 0 40px; background: #a73138; text-align: center; font-size: 15px; color: #ffffff; }
+
+.main-text__title { font-size: 36px; color: #ffffff; font-weight: 600; margin-bottom: 17px; line-height: 45px; letter-spacing: 2px; }
+
+.main-text p { line-height: 19px; margin-bottom: 17px; }
+
+.main-info { background: #64bc46; padding: 14px 0 18px; font-size: 16px; font-weight: 600; color: #ffffff; }
+
+.main-info__pic { float: left; }
+
+.main-info__text { margin-left: 115px; font-size: 16px; font-weight: 600; padding-top: 15px; font-family: Tahoma; }
+
+h1 { font-size: 46px; font-weight: 600; color: #ef3f4a; margin-bottom: 13px; }
+
+main { padding-top: 50px; }
+
+.catalog-menu { display: block; margin-bottom: 12px; }
+
+.catalog-menu ul { display: block; margin: 0; padding: 0; }
+
+.catalog-menu ul:after { content: ''; display: table; clear: both; }
+
+.catalog-menu ul li { display: block; list-style: none; float: left; padding: 0; margin: 0 7px 10px 0; }
+
+.catalog-menu ul li a { line-height: 29px; font-family: Tahoma; font-size: 14.26px; color: #797979; display: inline-block; padding: 0 14px; background: #ffffff; border-radius: 12px; font-weight: 600; }
+
+.catalog-list__title { font-size: 36px; color: #303030; font-weight: 600; padding-left: 15px; padding-right: 15px; margin-bottom: 28px; }
+
+.catalog-list .slick-list { max-width: 940px; }
+
+.catalog-list__slider { margin-left: auto; margin-right: auto; margin-bottom: 28px; }
+
+.catalog-list__slider:after { content: ''; display: block; clear: both; }
+
+.catalog-list__item { max-width: 212px; background: #fff; padding: 22px; margin-left: 15px; margin-right: 15px; min-height: 364px; margin-bottom: 20px; }
+
+.catalog-list__item-pic { padding-bottom: 11px; }
+
+.catalog-list__item-title { font-size: 18px; color: #000000; font-weight: bold; text-decoration: none; margin-bottom: 8px; }
+
+.catalog-list__item-title a { font-size: 18px; color: #000000; font-weight: bold; text-decoration: none; }
+
+.catalog-list__item-desc { font-size: 12px; color: #000000; }
+
+.catalog-list__item-desc table td { width: 175px; padding-bottom: 7px; }
+
+.catalog-list__item-desc table tr td:nth-last-child(1) { font-weight: 600; }
+
+.catalog-list__item-price { font-size: 18px; color: #ef3f4a; font-weight: 600; font-family: Tahoma; }
+
+/*# sourceMappingURL=style.css.map */
