@@ -48,6 +48,8 @@ body { background: #e6e7e8; font-family: 'PT Sans', sans-serif; font-size: 13px;
 
 .mainslider__item { position: relative; }
 
+.mainslider__item img { margin-left: auto; margin-left: auto; display: block; }
+
 .mainslider__item .container { position: absolute; left: 50%; top: 201px; -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); color: #fff; font-size: 21.83px; }
 
 .mainslider__title { font-size: 45.82px; line-height: 46px; font-weight: 600; padding-bottom: 15px; }
