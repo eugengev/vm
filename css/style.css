@@ -44,11 +44,11 @@ body { background: #e6e7e8; font-family: 'PT Sans', sans-serif; font-size: 13px;
 
 .btn, a.btn { width: 205px; height: 47px; background: #ffffff; font-size: 18px; font-family: Tahoma; display: inline-block; text-decoration: none; text-transform: uppercase; color: #ff3f4a; line-height: 47px; border-radius: 22px; font-weight: 600; text-align: center; letter-spacing: 0; }
 
-.mainslider { position: relative; }
+.mainslider { position: relative; background: #ef3f4a; }
 
 .mainslider__item { position: relative; }
 
-.mainslider__item img { margin-left: auto; margin-left: auto; display: block; }
+.mainslider__item img { margin-left: auto; margin-right: auto; display: block; }
 
 .mainslider__item .container { position: absolute; left: 50%; top: 201px; -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); color: #fff; font-size: 21.83px; }
 
