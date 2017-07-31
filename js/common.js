@@ -65,7 +65,7 @@ $(function() {
     });
 
 });
-
+/*
 var map;
 function initMap() {
     var myLatLng = {lat: 49.4225715, lng: 26.9763337};
@@ -86,3 +86,4 @@ function initMap() {
     });
 }
 
+*/
