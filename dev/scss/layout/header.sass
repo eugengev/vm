@@ -1,14 +1,74 @@
+button
+  cursor: pointer !important
+  outline: none !important
+
+.mobile-menu
+  display: none
+  @media (max-width: 768px)
+    display: block
+    width: 50px
+    height: 40px
+    background: none
+    padding: 5px
+    border: #eee solid 1px
+    margin-top: 10px
+    outline: none !important
+    border-radius: 3px
+    span
+      margin-top: 2px
+      display: block
+      height: 4px
+      background: #eee
+      position: relative
+      &:before
+        content: ''
+        display: block
+        height: 4px
+        background: #eee
+        margin-bottom: 5px
+        position: relative
+        top: -10px
+      &:after
+        margin-top: 5px
+        content: ''
+        display: block
+        height: 4px
+        background: #eee
 .header
   background: #343434
   min-height: 64px
   position: relative
   z-index: 100
+  @media (max-width: 480px)
+    padding-bottom: 10px
+    .container
+      padding-top: 70px
+    .row
+      position: absolute
+      left: 10px
+      right: 10px
+      top: 0
+  &.fixed
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 300
+    .header__logo, .header__phone
+      display: none !important
   .container
     position: relative
   &__logo
     position: absolute
     left: -13px
     top: 187%
+    @media (max-width: 800px)
+      top: 140%
+    @media (max-width: 480px)
+      position: relative
+      left: auto
+      top: auto
+      text-align: center
   &__phone
     position: absolute
     right: 13px
@@ -26,6 +86,13 @@
       font-weight: 600
       line-height: 37px
       letter-spacing: -1px
+    @media (max-width: 800px)
+      top: 140%
+    @media (max-width: 480px)
+      position: relative
+      left: auto
+      top: auto
+      text-align: center
   &__soc
     text-align: right
     margin-top: 7px
@@ -46,6 +113,16 @@
     padding-top: 16px
     padding-left: 1px
     line-height: 31px
+    @media (max-width: 768px)
+      display: none
+      &.show
+        display: block
+        position: absolute
+        left: 5px
+        width: 100vw
+        top: 64px
+        padding: 10px 20px
+        background: #343434
     li
       list-style: none
       float: left
@@ -53,12 +130,15 @@
       padding-right: 32px
       &:nth-last-child(1)
         padding-right: 0
+      @media (max-width: 768px)
+        float: none
       a
         font-weight: 600
         color: #c2c2c2
         font-size: 13px
         line-height: 31px
         letter-spacing: 0.2px
+        text-transform: uppercase
         &:hover
           color: #ef3f4a
       &.active
@@ -68,7 +148,7 @@
     margin-left: auto
     margin-right: 0
     display: block
-    width: 201px
+    min-width: 201px
     height: 37px
     border: #56af1b solid 2px
     border-radius: 18px
@@ -94,10 +174,21 @@
       padding-left: 11px
   &.inner
     margin-bottom: 165px
+    .header__logo
+      @media (max-width: 640px)
+        max-width: 50%
+      @media (max-width: 500px)
+        max-width: 100%
+    @media (max-width: 480px)
+      margin-bottom: 0
     .header__phone
       color: #343434
+      @media (max-width: 480px)
+        color: #ffffff
       a
         color: #343434
+        @media (max-width: 480px)
+          color: #ffffff
     .header__soc
       .vk
         @include sprite($vk-inn)

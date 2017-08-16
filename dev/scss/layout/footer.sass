@@ -2,17 +2,28 @@
   background: #ef3f4a
   min-height: 286px
   padding-top: 55px
+  @media (max-width: 480px)
+    .row
+      display: block
   &__logo
     max-width: 188px
     img
       position: relative
       left: -22px
+      @media (max-width: 480px)
+        left: auto
+    @media (max-width: 480px)
+      max-width: 100%
+      padding: 10px
+      text-align: left
   &__adress
     max-width: 281px
     padding-top: 5px
     color: #ffffff
     font-size: 14px
     font-family: Tahoma
+    @media (max-width: 800px)
+      line-height: 18px
     a
       color: #ffffff
     .header__soc
@@ -21,6 +32,11 @@
       a
         margin-left: 0
         margin-right: 9px
+    @media (max-width: 480px)
+      max-width: 150px
+      margin-left: 0
+      margin-right: auto
+      padding: 10px
   &__menu
     display: block
     margin: 0
@@ -44,3 +60,11 @@
     font-size: 12px
     line-height: 18px
     text-align: right
+    @media (max-width: 480px)
+      max-width: 100%
+      width: 100%
+      text-align: center
+      padding: 10px
+  @media (max-width: 800px)
+    padding-top: 15px
+    min-height: 170px

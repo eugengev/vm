@@ -4,6 +4,13 @@ body
   font-size: 13px
   line-height: normal
 
+a
+  color: #797979
+
+.hidden-mob
+  @media (max-width: 650px)
+    display: none
+
 .btn, a.btn
   width: 205px
   height: 47px
@@ -19,6 +26,10 @@ body
   font-weight: 600
   text-align: center
   letter-spacing: 0
+  @media (max-width: 800px)
+    height: 30px
+    line-height: 30px
+    font-size: 16px
   &-red
     width: auto
     background: #ef3f4a
@@ -29,7 +40,9 @@ body
 
 .mainslider
   position: relative
-  background: #ef3f4a
+  background: #ff3d4b
+  @media (max-width: 480px)
+    display: none
   &__item
     position: relative
     img
@@ -43,15 +56,24 @@ body
       transform: translate(-50%, 0)
       color: #fff
       font-size: 21.83px
+      @media (max-width: 800px)
+        top: 35%
   &__title
     font-size: 45.82px
     line-height: 46px
     font-weight: 600
     padding-bottom: 15px
+    @media (max-width: 800px)
+      font-size: 22px
+      line-height: normal
   &__desc
     font-size: 21.83px
     line-height: 29px
     padding-bottom: 35px
+    @media (max-width: 800px)
+      font-size: 14px
+      line-height: normal
+      padding-bottom: 15px
   .slick-arrow
     display: block
     z-index: 101
@@ -75,6 +97,8 @@ body
     display: block
     margin: 0
     text-align: center
+    @media (max-width: 800px)
+      bottom: 10px
     li
       list-style: none
       margin: 0
@@ -100,6 +124,14 @@ body
   text-align: center
   font-size: 15px
   color: #ffffff
+  @media (max-width: 800px)
+    font-size: 14px
+    line-height: normal
+    padding:  15px 0
+    br
+      display: none
+  @media (max-width: 480px)
+    font-size: 12px
   &__title
     font-size: 36px
     color: #ffffff
@@ -107,9 +139,17 @@ body
     margin-bottom: 17px
     line-height: 45px
     letter-spacing: 2px
+    @media (max-width: 800px)
+      font-size: 35px
+      line-height: 35px
+    @media (max-width: 480px)
+      font-size: 20px
+      line-height: 20px
   p
     line-height: 19px
     margin-bottom: 17px
+    @media (max-width: 480px)
+      margin-bottom: 5px
 
 .main-info
   background: #64bc46
@@ -119,12 +159,17 @@ body
   color: #ffffff
   &__pic
     float: left
+    @media (max-width: 640px)
+      margin-bottom: 10px
+      clear: both
   &__text
     margin-left: 115px
     font-size: 16px
     font-weight: 600
     padding-top: 15px
     font-family: Tahoma
+    @media (max-width: 800px)
+      font-size: 14px
 
 h1
   font-size: 46px
@@ -134,7 +179,9 @@ h1
 
 main
   padding-top: 50px
-  
+  @media (max-width: 800px)
+    padding-top: 10px
+
 .catalog-menu
   display: block
   margin-bottom: 12px
@@ -150,28 +197,29 @@ main
       display: block
       list-style: none
       float: left
-      padding: 0
       margin: 0 7px 10px 0
+      line-height: 29px
+      padding: 0 14px
+      background: #ffffff
+      border-radius: 12px
+      font-family: Tahoma
+      font-size: 14.26px
+      color: #797979
+      font-weight: 600
       a
-        line-height: 29px
         font-family: Tahoma
         font-size: 14.26px
         color: #797979
         display: inline-block
-        padding: 0 14px
-        background: #ffffff
-        border-radius: 12px
         font-weight: 600
 
 
 .catalog-list
+  width: 100%
   h3
     font-size: 22.5px
     color: #797979
     font-weight: 600
-  &.inn
-    padding-top: 20px
-    padding-bottom: 58px
   &__title
     font-size: 36px
     color: #303030
@@ -181,25 +229,64 @@ main
     margin-bottom: 28px
   .slick-list
     max-width: 940px
+    margin-left: auto
+    margin-right: auto
+    @media (max-width: 800px)
+      max-width: 720px
+      margin-left: auto
+      margin-right: auto
+    @media (max-width: 640px)
+      max-width: 470px
+      margin-left: auto
+      margin-right: auto
+    @media (max-width: 480px)
+      max-width: 230px
+      margin-left: auto
+      margin-right: auto
   &__slider
     margin-left: 15px
     margin-right: 15px
     margin-bottom: 28px
+    position: relative
     &:after
       content: ''
       display: block
       clear: both
+    .slick-arrow
+      position: absolute
+      top: 50%
+      border: none
+      background: none
+      text-indent: -9999px
+      cursor: pointer
+      outline: none
+      display: inline-block
+      &.slick-prev
+        left: -50px
+        @include sprite($st-perv)
+        @media (max-width: 480px)
+          left: -10px
+      &.slick-next
+        right: -50px
+        @include sprite($st-next)
+        @media (max-width: 480px)
+          right: -10px
   &__item
     max-width: 212px
     background: #fff
     padding: 22px
-    margin-left: 15px
-    margin-right: 15px
+    margin-left: 10px
+    margin-right: 10px
     min-height: 364px
     margin-bottom: 20px
     box-shadow: 0px 5px 7px 0px rgba(22, 22, 22, 0.05)
     &-pic
-      padding-bottom: 11px
+      margin-bottom: 11px
+      position: relative
+      img
+        display: block
+        margin-left: auto
+        margin-right: auto
     &-title
       font-size: 18px
       color: #000000
@@ -241,6 +328,9 @@ main
         color: #ffffff
   &__bt-cart
     display: block
+    width: 100%
+    border: none
+    cursor: pointer
     max-width: 165px
     height: 32px
     line-height: 32px
@@ -248,6 +338,7 @@ main
     margin-right: auto
     font-size: 13px
     font-weight: 600
+    text-transform: uppercase
     color: #ffffff
     background: #ef3f4a
     text-align: center
@@ -258,6 +349,7 @@ main
       height: 15px
       line-height: 15px
       position: relative
+      text-transform: uppercase
       &:before
         content: ''
         background: url(../images/cart-icon.png) no-repeat left center
@@ -272,6 +364,23 @@ main
     margin-right: 15px
     margin-top: 36px
     margin-bottom: 153px
+    @media (max-width: 800px)
+      margin-bottom: 50px
+  &.inn
+    padding-top: 20px
+    padding-bottom: 0px
+    @media (max-width: 650px)
+      .row
+        -ms-flex-pack:center !important
+        justify-content:center !important
+    .catalog-list__item
+      @media (max-width: 1024px)
+        margin-left: 10px
+        margin-right: 10px
+      @media (max-width: 650px)
+        margin-left: 5px
+        margin-right: 5px
+
 
 .breadcrum
   padding-bottom: 45px
@@ -303,3 +412,11 @@ main
           width: 24px
           height: 9px
           background: url(../images/breadcram-arrow.png) no-repeat center
+
+.popover
+  padding: 5px
+  .popover-title
+    display: none
+
+span[data-toggle=popover]
+  cursor: pointer

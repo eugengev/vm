@@ -52,38 +52,94 @@ $(function() {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1030,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('.js-slider-catlist-init').slick({
         dots: false,
         infinite: true,
-        arrows: false,
+        arrows: true,
         speed: 300,
         variableWidth: true,
-        slidesToShow: 4
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1030,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                    slidesToScroll: 3,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true
+                }
+            }
+        ]
+    });
+
+    $('.js-mobile-menu').click(function(){
+       $('.js-mobile-nav').toggleClass('show');
+    });
+
+    $(document).ready(function() {
+        var headerScroll = $('.header').offset().top,
+            headerScroll = $('.header').height();
+
+        $(document).bind('scroll',function(){
+            if($(document).scrollTop() >= headerScroll){
+                $('.header').addClass('fixed');
+            } else {
+                $('.header').removeClass('fixed');
+            }
+        }).triggerHandler('scroll');
+    });
+
+    $('[data-toggle="popover"]').popover({
+        container: 'body'
     });
 
 });
-/*
-var map;
-function initMap() {
-    var myLatLng = {lat: 49.4225715, lng: 26.9763337};
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        scrollwheel: false,
-        center:  {lat: 49.4225715, lng: 26.9763337},  // Brooklyn.
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP]
-        }
-    });
-
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'ТОчка на карте'
-    });
-}
-
-*/

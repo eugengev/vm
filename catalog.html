@@ -31,7 +31,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <ul class="header__nav">
+                <button class="mobile-menu js-mobile-menu">
+                    <span></span>
+                </button>
+                <ul class="js-mobile-nav header__nav">
                     <li><a href="#">О ФАБРИКЕ</a></li>
                     <li class="active"><a href="#">ОНЛАЙН-МАГАЗИН</a></li>
                     <li><a href="#">ДОСТАВКА</a></li>
@@ -40,7 +43,7 @@
                     <li><a href="#">АДРЕСА МАГАЗИНОВ</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3 col-9 ">
                 <div class="header__basket">
                     <a href="#">МОЯ КОРЗИНА</a> <span>1200 ₷</span>
                 </div>
@@ -57,7 +60,7 @@
                 <div class="catalog-menu">
                     <ul>
                         <li><a href="#">Весь каталог</a></li>
-                        <li><a href="#">Сосиски и сардельки</a></li>
+                        <li>Сосиски и сардельки</li>
                         <li><a href="#">Колбасы</a></li>
                         <li><a href="#">Деликатесы</a></li>
                         <li><a href="#">Полуфабрикаты</a></li>
@@ -69,7 +72,30 @@
             <div class="inn catalog-list">
                 <div class="catalog-list__slider">
                     <div class="row">
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
+                            <div class="catalog-list__item-pic">
+                                <img src="./images/pic1.jpg" alt="">
+                            </div>
+                            <div class="catalog-list__item-title">
+                                <a href="#">Сервелат<br>Мускатный</a>
+                            </div>
+                            <div class="catalog-list__item-desc">
+                                <table>
+                                    <tr>
+                                        <td>Цена за 100 г:</td>
+                                        <td class="catalog-list__item-price-one">38,4 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Средняя цена за упаковку <span data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><img src="./images/info-icon.png" alt=""></span> :</td>
+                                        <td class="catalog-list__item-price"><span>430 руб.</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="catalog-list__item-but">
+                                <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -92,7 +118,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -115,7 +141,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -138,7 +164,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -161,7 +187,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -184,7 +210,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -207,7 +233,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -230,7 +256,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -253,7 +279,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -276,7 +302,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -299,30 +325,7 @@
                                 <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
                             </div>
                         </div>
-                        <div class="col-md-3 catalog-list__item">
-                            <div class="catalog-list__item-pic">
-                                <img src="./images/pic1.jpg" alt="">
-                            </div>
-                            <div class="catalog-list__item-title">
-                                <a href="#">Сервелат<br>Мускатный</a>
-                            </div>
-                            <div class="catalog-list__item-desc">
-                                <table>
-                                    <tr>
-                                        <td>Цена за 100 г:</td>
-                                        <td class="catalog-list__item-price-one">38,4 руб.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Средняя цена за упаковку <img src="./images/info-icon.png" alt=""> :</td>
-                                        <td class="catalog-list__item-price"><span>430 руб.</span></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="catalog-list__item-but">
-                                <a href="#" class="catalog-list__bt-cart"><span>В КОРЗИНУ</span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 catalog-list__item">
+                        <div class="col-lg-3 col-md-4 catalog-list__item">
                             <div class="catalog-list__item-pic">
                                 <img src="./images/pic1.jpg" alt="">
                             </div>
@@ -368,7 +371,7 @@
                     <a href="#" class="fb"></a>
                 </div>
             </div>
-            <div class="col footer__menu1">
+            <div class="col hidden-mob footer__menu1">
                 <ul class="footer__menu">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О фабрике</a></li>
@@ -376,7 +379,7 @@
                     <li><a href="#">Доставка</a></li>
                 </ul>
             </div>
-            <div class="col footer__menu2">
+            <div class="col hidden-mob footer__menu2">
                 <ul class="footer__menu">
                     <li><a href="#">Рецепты</a></li>
                     <li><a href="#">Оптовикам</a></li>
@@ -402,7 +405,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/common.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNjCtK9ZdBj5bjZdMhdtTGY9F1SGoUQn8&amp;callback=initMap" async defer></script>
 <script src="//localhost:35729/livereload.js"></script>
 
 </body>
